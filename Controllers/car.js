@@ -7,7 +7,6 @@ module.exports = {
                 if (err) {
                     res.status(500).send(err);
                 }
-                console.log(results);
                 res.status(200).send(results.rows);
             });
         } catch (error) {
